@@ -14,14 +14,14 @@ asset:
 
   zipkin:
     ingress:
-      host: asset-zipkin-uat.az1-ahi-int.com    
+      host: asset-zipkin-uat.az1-assets.com    
     memory: 576Mi  
 
   apigw:
     image: samuelest/apigw:2.5
     memory: 576Mi
     ingress:
-      host: asset-api-uat.az1-ahi-int.com
+      host: asset-api-uat.az1-assets.com
 
   eureka:
     image: samuelest/eureka-server:2.5
@@ -31,7 +31,7 @@ asset:
     image: samuelest/api-security:2.5
     memory: 576Mi
     ingress:
-      host: asset-api-auth-uat.az1-ahi-int.com
+      host: asset-api-auth-uat.az1-assets.com
       
   customers:
     image: samuelest/api-customers:2.5
