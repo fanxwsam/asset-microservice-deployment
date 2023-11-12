@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-fraud
-          image: samuelest/api-fraud:latest
+          image: samuelest/api-fraud:6.3
           imagePullPolicy: Always
           ports:
             - containerPort: 8081

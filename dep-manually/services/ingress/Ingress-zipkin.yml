@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-   -  host: asset-zipkin.az1-assets.com
+    - host: zipkin-int.samsassets.com  
       http:
        paths:
          - path: /
@@ -22,5 +22,5 @@ spec:
                  number: 9411
   tls:
   - hosts:
-    - asset-zipkin.az1-assets.com
+    - zipkin-int.samsassets.com
     secretName: asset-zipkin-ingress-cert-tsl

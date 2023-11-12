@@ -10,7 +10,8 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-   -  host: asset-auth.az1-assets.com
+  #  -  host: asset-auth.az1-assets.com
+   -  host: auth-int.samsassets.com
       http:
        paths:
          - path: /
@@ -22,7 +23,8 @@ spec:
                  number: 8000
   tls:
   - hosts:
-    - asset-auth.az1-assets.com
+    # - asset-auth.az1-assets.com
+    - auth-int.samsassets.com
     secretName: asset-auth-ingress-cert-tsl
 
 
