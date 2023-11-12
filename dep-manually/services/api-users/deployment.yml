@@ -19,7 +19,7 @@ spec:
       containers:
         - name: api-users
 #          image: samuelest/bha-backend-api:1.0-SNAPSHOT
-          image: samuelest/api-users:6.3
+          image: samuelest/api-users:6.5
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:

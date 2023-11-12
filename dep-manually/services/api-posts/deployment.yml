@@ -20,14 +20,14 @@ spec:
       containers:
         - name: api-posts
 #          image: samuelest/bha-backend-api:1.0-SNAPSHOT
-          image: samuelest/api-posts:6.4
+          image: samuelest/api-posts:6.7
           # imagePullPolicy: IfNotPresent
           imagePullPolicy: Always
           ports:
-            - containerPort: 8089            
-          env:
-            - name: SPRING_PROFILES_ACTIVE
-              value: azure
+            - containerPort: 8089
+          # env:
+          #   - name: SPRING_PROFILES_ACTIVE
+          #     value: azure
           resources:
             requests:
               memory: 576Mi                  
